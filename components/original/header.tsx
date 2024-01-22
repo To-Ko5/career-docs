@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <header className="mt-5">
+    <header className="mt-5 mb-4">
       <div className="container max-w-4xl flex justify-between">
         <div className="flex items-center">
           <div className="mr-4">
