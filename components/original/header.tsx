@@ -1,18 +1,9 @@
 'use client'
-import React, { useState } from 'react'
 import ThemeButton from '@/components/original/theme-button'
 import { meta } from '@/data/data'
-import { Button } from '@/components/ui/button'
-import { MenuIcon } from 'lucide-react'
 import Sidebar from './sidebar'
 
 const Header = () => {
-  const [isSidebar, setIsSidebar] = useState(false)
-
-  const toggleSidebar = () => {
-    setIsSidebar(!isSidebar)
-  }
-
   return (
     <header className="mt-5 mb-4">
       <div className="container max-w-4xl flex justify-between">
