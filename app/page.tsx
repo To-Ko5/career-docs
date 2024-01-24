@@ -1,7 +1,7 @@
 import About from '@/components/original/about'
 import Date from '@/components/original/date'
 import Profile from '@/components/original/profile'
-import Image from 'next/image'
+import Works from '@/components/original/works'
 
 export default function Home() {
   return (
@@ -14,6 +14,9 @@ export default function Home() {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <Works />
       </div>
     </main>
   )
