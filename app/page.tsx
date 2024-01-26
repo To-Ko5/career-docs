@@ -5,7 +5,7 @@ import Works from '@/components/original/works'
 
 export default function Home() {
   return (
-    <main className="container max-w-4xl space-y-10">
+    <main className="container max-w-4xl pb-16 space-y-10">
       <div>
         <Date />
       </div>
