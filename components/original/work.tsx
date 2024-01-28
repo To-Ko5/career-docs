@@ -8,7 +8,9 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
+import { Button } from '../ui/button'
 
 const Work = () => {
   const work = {
@@ -37,9 +39,18 @@ const Work = () => {
         <CardContent className="text-sm text-muted-foreground">
           Card Content
         </CardContent>
-        <CardFooter className="text-sm text-muted-foreground">
-          Card Footer
-        </CardFooter>
+
+        <CardContent>
+          <h4 className="text-sm font-semibold mb-2">使用技術</h4>
+          <Badge variant="outline">Next.js</Badge>
+        </CardContent>
+
+        <CardContent>
+          <h4 className="text-sm font-semibold mb-2">使用ツール</h4>
+          <Badge variant="outline">Azure DevOps</Badge>
+        </CardContent>
+
+        <CardFooter className="text-sm text-muted-foreground"></CardFooter>
       </Card>
     </section>
   )
