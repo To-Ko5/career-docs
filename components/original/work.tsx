@@ -50,7 +50,13 @@ const Work = () => {
           <Badge variant="outline">Azure DevOps</Badge>
         </CardContent>
 
-        <CardFooter className="text-sm text-muted-foreground"></CardFooter>
+        <CardFooter>
+          <div className="w-full text-right">
+            <Button size="sm" variant="outline">
+              Open
+            </Button>
+          </div>
+        </CardFooter>
       </Card>
     </section>
   )
