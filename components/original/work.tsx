@@ -10,7 +10,15 @@ import {
 } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import { Button } from '../ui/button'
+import { Button } from '@/components//ui/button'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger
+} from '@/components/ui/dialog'
 
 const Work = () => {
   const work = {
@@ -26,7 +34,7 @@ const Work = () => {
             {work.start} - {work.end}
           </div>
           <div className="flex items-center justify-between gap-x-2">
-            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2">
               <Link className="hover:underline" href="/">
                 Projects
               </Link>
@@ -35,10 +43,10 @@ const Work = () => {
               {work.start} - {work.end}
             </div>
           </div>
+          <div>
+            <Badge variant="outline">Frontend</Badge>
+          </div>
         </CardHeader>
-        <CardContent className="text-sm text-muted-foreground">
-          Card Content
-        </CardContent>
 
         <CardContent>
           <h4 className="text-sm font-semibold mb-2">使用技術</h4>
@@ -50,13 +58,12 @@ const Work = () => {
           <Badge variant="outline">Azure DevOps</Badge>
         </CardContent>
 
-        <CardFooter>
-          <div className="w-full text-right">
-            <Button size="sm" variant="outline">
-              Open
-            </Button>
-          </div>
-        </CardFooter>
+        <CardContent className="text-sm text-muted-foreground">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus repellendus cumque explicabo ea molestiae temporibus
+          praesentium tempora. Dolorem esse rerum alias necessitatibus non
+          earum, ducimus, expedita in molestias numquam dicta.
+        </CardContent>
       </Card>
     </section>
   )
