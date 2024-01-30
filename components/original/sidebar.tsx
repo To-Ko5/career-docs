@@ -9,6 +9,14 @@ import {
 } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 import { MenuIcon, MoreHorizontalIcon } from 'lucide-react'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger
+} from '@/components/ui/dialog'
 
 const Sidebar = () => {
   return (
@@ -30,17 +38,23 @@ const Sidebar = () => {
               reprehenderit. At, quibusdam.
             </p>
             <div className="text-right">
-              <Button variant="outline" size="icon">
-                <MoreHorizontalIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <MoreHorizontalIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                    <DialogDescription>
+                      This action cannot be undone. This will permanently delete
+                      your account and remove your data from our servers.
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
             </div>
-          </SheetDescription>
-        </SheetHeader>
-        <SheetHeader>
-          <SheetTitle>Case 2</SheetTitle>
-          <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
           </SheetDescription>
         </SheetHeader>
       </SheetContent>
