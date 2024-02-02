@@ -1,5 +1,7 @@
 import Date from '@/components/original/date'
 import Work from '@/components/original/work'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 
 const CasePage = () => {
@@ -10,6 +12,11 @@ const CasePage = () => {
       </div>
       <div>
         <Work />
+      </div>
+      <div>
+        <Button variant="outline">
+          <Link href="/">TOP</Link>
+        </Button>
       </div>
     </main>
   )
