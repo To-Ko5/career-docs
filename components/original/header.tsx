@@ -2,6 +2,7 @@
 import ThemeButton from '@/components/original/theme-button'
 import { meta } from '@/data/data'
 import Sidebar from './sidebar'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -12,7 +13,9 @@ const Header = () => {
             <Sidebar />
           </div>
           <div className="flex-1">
-            <p>{meta.title}</p>
+            <div>
+              <Link href="/">{meta.title}</Link>
+            </div>
           </div>
         </div>
 
