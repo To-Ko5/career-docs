@@ -17,7 +17,7 @@ const Work = () => {
           </div>
           <div className="flex items-center justify-between gap-x-2">
             <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2">
-              <Link className="hover:underline" href="/">
+              <Link className="hover:underline" scroll={false} href={`/case/1`}>
                 Projects
               </Link>
             </h3>
