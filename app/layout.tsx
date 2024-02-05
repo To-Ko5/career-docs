@@ -13,13 +13,12 @@ export const metadata: Metadata = {
   description: meta.description
 }
 
-export default function RootLayout({
-  children,
-  modal
-}: {
+type Layout = {
   children: React.ReactNode
   modal: React.ReactNode
-}) {
+}
+
+export default function RootLayout({ children, modal }: Layout) {
   return (
     <html lang="ja" suppressHydrationWarning>
       <body className={inter.className}>
