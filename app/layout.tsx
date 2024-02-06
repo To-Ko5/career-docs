@@ -1,7 +1,7 @@
 import Footer from '@/components/original/footer'
 import Header from '@/components/original/header'
 import { ThemeProvider } from '@/context/theme-provider'
-import { meta } from '@/data/data'
+import { site } from '@/data/data'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -9,8 +9,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: meta.title,
-  description: meta.description
+  title: site.title,
+  description: site.description
 }
 
 type Layout = {

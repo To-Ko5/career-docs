@@ -1,8 +1,8 @@
 'use client'
 import ThemeButton from '@/components/original/theme-button'
-import { meta } from '@/data/data'
-import Sidebar from './sidebar'
+import { site } from '@/data/data'
 import Link from 'next/link'
+import Sidebar from './sidebar'
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
           </div>
           <div className="flex-1">
             <div>
-              <Link href="/">{meta.title}</Link>
+              <Link href="/">{site.title}</Link>
             </div>
           </div>
         </div>
