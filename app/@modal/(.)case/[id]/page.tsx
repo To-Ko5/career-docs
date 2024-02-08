@@ -6,6 +6,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTrigger
 } from '@/components/ui/dialog'
@@ -54,20 +55,14 @@ const Page = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClick}>
-      <DialogContent className="max-w-screen-xl w-4/6">
+      <DialogContent className="max-w-screen-xl w-4/6 max-h-[80%] overflow-y-auto">
         <DialogHeader className="mt-4">
           <div className="text-sm text-right tabular-nums text-muted-foreground sm:hidden">
             {work.date.start} - {work.date.end}
           </div>
           <div className="flex items-center justify-between gap-x-2">
-            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2">
-              <Link
-                className="hover:underline text-xl"
-                scroll={false}
-                href={`/case/${work.case}`}
-              >
-                {work.projects}
-              </Link>
+            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2 text-xl">
+              {work.projects}
             </h3>
             <div className="text-sm tabular-nums text-muted-foreground hidden sm:block">
               {work.date.start} - {work.date.end}
@@ -114,9 +109,11 @@ const Page = ({
           {work.description}
         </DialogDescription>
 
-        <DialogTrigger asChild>
-          <Button variant="outline">Close</Button>
-        </DialogTrigger>
+        <DialogFooter className="sm:justify-start">
+          <DialogTrigger asChild>
+            <Button variant="outline">Close</Button>
+          </DialogTrigger>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   )
