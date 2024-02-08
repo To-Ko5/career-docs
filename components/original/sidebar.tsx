@@ -1,4 +1,5 @@
 'use client'
+import { Button } from '@/components/ui/button'
 import {
   Sheet,
   SheetContent,
@@ -7,18 +8,9 @@ import {
   SheetTitle,
   SheetTrigger
 } from '@/components/ui/sheet'
-import { Button } from '@/components/ui/button'
-import { MenuIcon, MoreHorizontalIcon } from 'lucide-react'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger
-} from '@/components/ui/dialog'
-import Link from 'next/link'
 import { works } from '@/data/data'
+import { MenuIcon, MoreHorizontalIcon } from 'lucide-react'
+import Link from 'next/link'
 
 const Sidebar = () => {
   return (
