@@ -1,3 +1,4 @@
+import { profile } from '@/data/data'
 import React from 'react'
 
 const Profile = () => {
@@ -8,8 +9,8 @@ const Profile = () => {
           <img src="https://placehold.jp/500x500.png" />
         </div>
         <div>
-          <h1 className="text-2xl mb-2 font-bold">名前</h1>
-          <p className="text-muted-foreground">Frontend</p>
+          <h1 className="text-2xl mb-2 font-bold">{profile.name}</h1>
+          <p className="text-muted-foreground">{profile.position}</p>
         </div>
       </div>
     </section>
