@@ -1,5 +1,12 @@
 import { Button } from '@/components/ui/button'
+import { site } from '@/data/data'
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: `ページが見つかりません | ${site.title}`,
+  description: site.description
+}
 
 const NotFound = () => {
   return (
