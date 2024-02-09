@@ -7,6 +7,12 @@ export const date = {
   lastUpdatedAt: new Date()
 }
 
+export const profile = {
+  name: 'Name',
+  photo: 'http://localhost:3000/image.png',
+  position: 'Engineer'
+}
+
 export const about = {
   content: 'lorem ipsum dolor sit amet consectetur adipisicing elitt totam'
 }
