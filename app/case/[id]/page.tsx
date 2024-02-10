@@ -50,7 +50,7 @@ const CasePage = ({ params }: Props) => {
         <Work work={work} />
       </div>
       <div>
-        <Button variant="outline">
+        <Button variant="outline" asChild>
           <Link href="/">TOP</Link>
         </Button>
       </div>
