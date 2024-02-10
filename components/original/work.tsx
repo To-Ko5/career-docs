@@ -22,7 +22,7 @@ const Work = ({ work }: Props) => {
                 scroll={false}
                 href={`/case/${work.case}`}
               >
-                {work.projects}
+                {work.project}
               </Link>
             </h3>
             <div className="text-sm tabular-nums text-muted-foreground hidden sm:block">

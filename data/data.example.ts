@@ -20,7 +20,7 @@ export const about = {
 export const works = [
   {
     case: 1,
-    projects: 'case1',
+    project: 'case1',
     date: {
       start: 2023,
       end: 2024
@@ -32,7 +32,7 @@ export const works = [
   },
   {
     case: 2,
-    projects: 'case2',
+    project: 'case2',
     date: {
       start: 2023,
       end: 2024
@@ -44,7 +44,7 @@ export const works = [
   },
   {
     case: 3,
-    projects: 'case3',
+    project: 'case3',
     date: {
       start: 2023,
       end: 2024

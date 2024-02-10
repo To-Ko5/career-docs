@@ -1,6 +1,6 @@
 export type work = {
   case: number
-  projects: string
+  project: string
   date: {
     start: string
     end: string

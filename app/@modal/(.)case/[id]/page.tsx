@@ -62,7 +62,7 @@ const Page = ({
           </div>
           <div className="flex items-center justify-between gap-x-2">
             <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2 text-xl">
-              {work.projects}
+              {work.project}
             </h3>
             <div className="text-sm tabular-nums text-muted-foreground hidden sm:block">
               {work.date.start} - {work.date.end}
