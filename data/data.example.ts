@@ -17,9 +17,9 @@ export const profile = {
 }
 
 export const urlLinks: url_link[] = [
-  { icon: Github, href: 'http://localhost:3000/url' },
-  { icon: Link, href: 'http://localhost:3000/url' },
-  { icon: BookText, href: 'http://localhost:3000/url' }
+  { icon: Github, href: 'http://localhost:3000/url', tooltip: 'Github' },
+  { icon: Link, href: 'http://localhost:3000/url', tooltip: 'SNS' },
+  { icon: BookText, href: 'http://localhost:3000/url', tooltip: 'Blog' }
 ]
 
 export const about = {

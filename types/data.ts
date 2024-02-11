@@ -16,4 +16,5 @@ export type work = {
 export type url_link = {
   icon: LucideIcon
   href: string
+  tooltip?: string
 }
