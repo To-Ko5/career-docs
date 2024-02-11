@@ -8,7 +8,6 @@ const ThemeButton = () => {
   const { theme, setTheme } = useTheme()
 
   const handleClick = () => {
-    console.log(theme)
     if (theme === 'dark') {
       setTheme('light')
     } else {
