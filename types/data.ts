@@ -10,3 +10,8 @@ export type work = {
   tools: string[]
   description: string
 }
+
+export type url_link = {
+  icon: 'Github' | 'Link' | 'BookText'
+  href: string
+}

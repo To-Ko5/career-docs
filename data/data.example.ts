@@ -1,3 +1,5 @@
+import { url_link } from '@/types/data'
+
 export const site = {
   title: 'site description',
   description: 'site description'
@@ -12,6 +14,12 @@ export const profile = {
   photo: 'http://localhost:3000/image.png',
   position: 'Engineer'
 }
+
+export const urlLinks: url_link[] = [
+  { icon: 'Github', href: 'http://localhost:3000/url' },
+  { icon: 'Link', href: 'http://localhost:3000/url' },
+  { icon: 'BookText', href: 'http://localhost:3000/url' }
+]
 
 export const about = {
   content: 'lorem ipsum dolor sit amet consectetur adipisicing elitt totam'
