@@ -1,3 +1,5 @@
+import { LucideIcon } from 'lucide-react'
+
 export type work = {
   case: number
   project: string
@@ -12,6 +14,6 @@ export type work = {
 }
 
 export type url_link = {
-  icon: 'Github' | 'Link' | 'BookText'
+  icon: LucideIcon
   href: string
 }
