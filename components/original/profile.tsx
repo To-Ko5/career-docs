@@ -1,5 +1,6 @@
-import { profile } from '@/data/data'
+import { profile, urlLinks } from '@/data/data'
 import React from 'react'
+import ExternalLinkArea from '@/components/original/external-link-area'
 
 const Profile = () => {
   return (
@@ -9,8 +10,15 @@ const Profile = () => {
           <img src="https://placehold.jp/500x500.png" />
         </div>
         <div>
-          <h1 className="text-2xl mb-2 font-bold">{profile.name}</h1>
-          <p className="text-muted-foreground">{profile.position}</p>
+          <div className="mb-2">
+            <h1 className="text-2xl mb-2 font-bold">{profile.name}</h1>
+            <p className="text-muted-foreground">{profile.position}</p>
+          </div>
+          {urlLinks.length > 0 && (
+            <div>
+              <ExternalLinkArea urlLinks={urlLinks} />
+            </div>
+          )}
         </div>
       </div>
     </section>
