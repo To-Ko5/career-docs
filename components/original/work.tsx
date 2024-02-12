@@ -1,19 +1,25 @@
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { work } from '@/types/data'
+import { format } from 'date-fns'
 import Link from 'next/link'
+import { useCallback } from 'react'
 
 type Props = {
   work: work
 }
 
 const Work = ({ work }: Props) => {
+  const dateFormat = useCallback((date: string) => {
+    return format(date, 'yyyy/MM')
+  }, [])
+
   return (
     <section>
       <Card>
         <CardHeader>
           <div className="text-sm text-right tabular-nums text-muted-foreground sm:hidden">
-            {work.date.start} - {work.date.end}
+            {dateFormat(work.date.start)} - {dateFormat(work.date.end)}
           </div>
           <div className="flex items-center justify-between gap-x-2">
             <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2">
@@ -26,7 +32,7 @@ const Work = ({ work }: Props) => {
               </Link>
             </h3>
             <div className="text-sm tabular-nums text-muted-foreground hidden sm:block">
-              {work.date.start} - {work.date.end}
+              {dateFormat(work.date.start)} - {dateFormat(work.date.end)}
             </div>
           </div>
           <div className="flex gap-2 flex-wrap">
