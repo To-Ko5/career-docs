@@ -57,14 +57,14 @@ const Page = ({
     <Dialog open={isOpen} onOpenChange={handleClick}>
       <DialogContent className="max-w-screen-xl w-4/6 max-h-[80%] overflow-y-auto">
         <DialogHeader className="mt-4">
-          <div className="text-sm text-right tabular-nums text-muted-foreground sm:hidden">
+          <div className="text-sm text-right tabular-nums text-muted-foreground md:hidden mb-3">
             {work.date.start} - {work.date.end}
           </div>
           <div className="flex items-center justify-between gap-x-2">
             <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2 text-xl">
               {work.project}
             </h3>
-            <div className="text-sm tabular-nums text-muted-foreground hidden sm:block">
+            <div className="text-sm tabular-nums text-muted-foreground hidden md:block">
               {work.date.start} - {work.date.end}
             </div>
           </div>

@@ -18,7 +18,7 @@ const Work = ({ work }: Props) => {
     <section>
       <Card>
         <CardHeader>
-          <div className="text-sm text-right tabular-nums text-muted-foreground sm:hidden">
+          <div className="text-sm text-right tabular-nums text-muted-foreground sm:hidden mb-3">
             {dateFormat(work.date.start)} - {dateFormat(work.date.end)}
           </div>
           <div className="flex items-center justify-between gap-x-2">
