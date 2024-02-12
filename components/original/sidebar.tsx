@@ -25,7 +25,11 @@ const Sidebar = () => {
         {works.map((work) => {
           return (
             <SheetHeader className="mb-4" key={work.case}>
-              <SheetTitle className="text-md">{work.project}</SheetTitle>
+              <SheetTitle className="text-md">
+                <Link className="hover:underline" href={`/case/${work.case}`}>
+                  {work.project}
+                </Link>
+              </SheetTitle>
               <div className="flex gap-x-2">
                 <SheetDescription className="line-clamp-2 mb-2">
                   {work.description}
