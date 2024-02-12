@@ -66,7 +66,7 @@ const Work = ({ work }: Props) => {
           </div>
         </CardContent>
 
-        <CardContent className="text-sm text-muted-foreground">
+        <CardContent className="text-sm text-muted-foreground whitespace-pre-line">
           {work.description}
         </CardContent>
       </Card>
