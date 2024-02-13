@@ -37,7 +37,10 @@ export const works = [
     positions: ['Frontend'],
     skills: ['Next.js', 'MUI'],
     tools: ['GitHub', 'AWS'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing'
+    description: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+      list: ['List1', 'List2', 'List3']
+    }
   },
   {
     case: 2,
@@ -49,7 +52,10 @@ export const works = [
     positions: ['Frontend'],
     skills: ['Nuxt.js', 'Vuetify'],
     tools: ['Adobe', 'Azure DevOps'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing'
+    description: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+      list: null
+    }
   },
   {
     case: 3,
@@ -61,6 +67,9 @@ export const works = [
     positions: ['Frontend'],
     skills: ['Next.js', 'Tailwind'],
     tools: ['Docker', 'Figma'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing'
+    description: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing',
+      list: ['List1', 'List2']
+    }
   }
 ]

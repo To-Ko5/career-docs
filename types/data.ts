@@ -10,7 +10,10 @@ export type work = {
   positions: string[]
   skills: string[]
   tools: string[]
-  description: string
+  description: {
+    text: string
+    list: string[] | null
+  }
 }
 
 export type url_link = {
