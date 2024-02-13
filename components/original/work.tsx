@@ -73,7 +73,14 @@ const Work = ({ work }: Props) => {
         </CardContent>
 
         <CardContent className="text-sm text-muted-foreground whitespace-pre-line">
-          {work.description}
+          <div className="mb-2">{work.description.text}</div>
+          {work.description.list && (
+            <ul>
+              {work.description.list.map((listText, index) => {
+                return <li key={index}>{listText}</li>
+              })}
+            </ul>
+          )}
         </CardContent>
       </Card>
     </section>

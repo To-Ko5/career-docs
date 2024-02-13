@@ -12,7 +12,6 @@ import {
 } from '@/components/ui/dialog'
 import { works } from '@/data/data'
 import { MoreHorizontalIcon } from 'lucide-react'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { ReactNode, useState } from 'react'
 
@@ -106,7 +105,14 @@ const Page = ({
         </div>
 
         <DialogDescription className="text-sm text-muted-foreground">
-          {work.description}
+          <div className="mb-2">{work.description.text}</div>
+          {work.description.list && (
+            <ul>
+              {work.description.list.map((listText, index) => {
+                return <li key={index}>{listText}</li>
+              })}
+            </ul>
+          )}
         </DialogDescription>
 
         <DialogFooter className="sm:justify-start">

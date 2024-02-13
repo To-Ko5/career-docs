@@ -32,7 +32,7 @@ const Sidebar = () => {
               </SheetTitle>
               <div className="flex gap-x-2">
                 <SheetDescription className="line-clamp-2 mb-2">
-                  {work.description}
+                  {work.description.text}
                 </SheetDescription>
                 <div className="text-right">
                   <Button variant="outline" size="icon" asChild>
