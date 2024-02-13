@@ -75,7 +75,7 @@ const Work = ({ work }: Props) => {
         <CardContent className="text-sm text-muted-foreground whitespace-pre-line">
           <div className="mb-2">{work.description.text}</div>
           {work.description.list && (
-            <ul>
+            <ul className="list-disc pl-4">
               {work.description.list.map((listText, index) => {
                 return <li key={index}>{listText}</li>
               })}

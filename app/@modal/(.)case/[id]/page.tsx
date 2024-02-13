@@ -60,7 +60,7 @@ const Page = ({
             {work.date.start} - {work.date.end}
           </div>
           <div className="flex items-center justify-between gap-x-2">
-            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2 text-xl">
+            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-3 text-xl">
               {work.project}
             </h3>
             <div className="text-sm tabular-nums text-muted-foreground hidden md:block">
@@ -79,7 +79,7 @@ const Page = ({
         </DialogHeader>
 
         <div>
-          <h4 className="text-sm font-semibold mb-2">使用技術</h4>
+          <h4 className="text-sm font-semibold mb-3">使用技術</h4>
           <div className="flex gap-2 flex-wrap">
             {work.skills.map((skill, index) => {
               return (
@@ -92,7 +92,7 @@ const Page = ({
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-2">使用ツール</h4>
+          <h4 className="text-sm font-semibold mb-3">使用ツール</h4>
           <div className="flex gap-2 flex-wrap">
             {work.tools.map((tool, index) => {
               return (
@@ -105,9 +105,9 @@ const Page = ({
         </div>
 
         <DialogDescription className="text-sm text-muted-foreground">
-          <div className="mb-2">{work.description.text}</div>
+          <div className="mb-3">{work.description.text}</div>
           {work.description.list && (
-            <ul>
+            <ul className="list-disc pl-4">
               {work.description.list.map((listText, index) => {
                 return <li key={index}>{listText}</li>
               })}
