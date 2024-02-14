@@ -54,7 +54,7 @@ const Page = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClick}>
-      <DialogContent className="max-w-screen-xl w-4/6 max-h-[80%] overflow-y-auto">
+      <DialogContent className="max-w-screen-xl w-4/6 max-h-[80%] overflow-y-auto gap-6">
         <DialogHeader className="mt-4">
           <div className="text-sm text-right tabular-nums text-muted-foreground md:hidden mb-3">
             {work.date.start} - {work.date.end}
