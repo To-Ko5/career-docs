@@ -73,7 +73,7 @@ const Work = ({ work }: Props) => {
         </CardContent>
 
         <CardContent className="text-sm text-muted-foreground whitespace-pre-line">
-          <div className="mb-2">{work.description.text}</div>
+          <div className="mb-3">{work.description.text}</div>
           {work.description.list && (
             <ul className="list-disc pl-4">
               {work.description.list.map((listText, index) => {
