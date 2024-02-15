@@ -1,5 +1,6 @@
 import Date from '@/components/original/date'
 import Work from '@/components/original/work'
+import WorkPagination from '@/components/original/work-pagination'
 import { Button } from '@/components/ui/button'
 import { profile, site, works } from '@/data/data'
 import { work } from '@/types/data'
@@ -48,6 +49,9 @@ const CasePage = ({ params }: Props) => {
       </div>
       <div>
         <Work work={work} />
+      </div>
+      <div>
+        <WorkPagination />
       </div>
       <div>
         <Button variant="outline" asChild>
