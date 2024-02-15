@@ -1,13 +1,24 @@
 'use client'
 import { MoonIcon, SunIcon } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { useTheme } from 'next-themes'
 
 const ThemeButton = () => {
   const { theme, setTheme } = useTheme()
+  const darkTheme = useRef(false)
+
+  useEffect(() => {
+    darkTheme.current = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches
+  }, [])
 
   const handleClick = () => {
+    if (darkTheme.current && theme === 'system') {
+      setTheme('light')
+      return
+    }
     if (theme === 'dark') {
       setTheme('light')
     } else {
