@@ -104,7 +104,7 @@ const Page = ({
           </div>
         </div>
 
-        <DialogDescription className="text-sm text-muted-foreground">
+        <div className="text-sm text-muted-foreground">
           <div className="mb-3">{work.description.text}</div>
           {work.description.list && (
             <ul className="list-disc pl-4">
@@ -113,7 +113,7 @@ const Page = ({
               })}
             </ul>
           )}
-        </DialogDescription>
+        </div>
 
         <DialogFooter className="sm:justify-start">
           <DialogTrigger asChild>
