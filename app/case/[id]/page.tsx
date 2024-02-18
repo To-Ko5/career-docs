@@ -48,7 +48,7 @@ const CasePage = ({ params }: Props) => {
         <Date />
       </div>
       <div>
-        <Work work={work} />
+        <Work work={work} isLink={false} />
       </div>
       <div>
         <WorkPagination />

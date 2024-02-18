@@ -7,12 +7,27 @@ import { useCallback } from 'react'
 
 type Props = {
   work: work
+  isLink?: boolean
 }
 
-const Work = ({ work }: Props) => {
+const Work = ({ work, isLink = true }: Props) => {
   const dateFormat = useCallback((date: string) => {
     return format(date, 'yyyy/MM')
   }, [])
+
+  const setTitle = useCallback(() => {
+    if (isLink) {
+      return (
+        <Link
+          className="hover:underline text-xl"
+          scroll={false}
+          href={`/case/${work.case}`}
+        ></Link>
+      )
+    } else {
+      return <div className="text-xl"> {work.project}</div>
+    }
+  }, [work, isLink])
 
   return (
     <section>
@@ -23,13 +38,7 @@ const Work = ({ work }: Props) => {
           </div>
           <div className="flex items-center justify-between gap-x-2">
             <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none mb-2">
-              <Link
-                className="hover:underline text-xl"
-                scroll={false}
-                href={`/case/${work.case}`}
-              >
-                {work.project}
-              </Link>
+              {setTitle()}
             </h3>
             <div className="text-sm tabular-nums text-muted-foreground hidden sm:block">
               {dateFormat(work.date.start)} - {dateFormat(work.date.end)}
