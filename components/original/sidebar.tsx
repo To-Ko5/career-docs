@@ -26,7 +26,11 @@ const Sidebar = () => {
           return (
             <SheetHeader className="mb-4" key={work.case}>
               <SheetTitle className="text-md">
-                <Link className="hover:underline" href={`/case/${work.case}`}>
+                <Link
+                  className="hover:underline"
+                  href={`/case/${work.case}`}
+                  scroll={false}
+                >
                   {work.project}
                 </Link>
               </SheetTitle>
@@ -36,7 +40,7 @@ const Sidebar = () => {
                 </SheetDescription>
                 <div className="text-right">
                   <Button variant="outline" size="icon" asChild>
-                    <Link href={`/case/${work.case}`}>
+                    <Link href={`/case/${work.case}`} scroll={false}>
                       <MoreHorizontalIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
                     </Link>
                   </Button>
