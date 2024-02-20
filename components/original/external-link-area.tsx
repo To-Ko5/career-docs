@@ -28,7 +28,11 @@ const ExternalLinkArea = ({ urlLinks }: Props) => {
                       className="rounded-full"
                       asChild
                     >
-                      <Link href={`${link.href}`}>
+                      <Link
+                        href={`${link.href}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <link.icon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
                       </Link>
                     </Button>
@@ -49,7 +53,11 @@ const ExternalLinkArea = ({ urlLinks }: Props) => {
                 className="rounded-full"
                 asChild
               >
-                <Link href={`${link.href}`}>
+                <Link
+                  href={`${link.href}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <link.icon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
                 </Link>
               </Button>
