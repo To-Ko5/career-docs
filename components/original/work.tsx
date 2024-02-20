@@ -22,10 +22,12 @@ const Work = ({ work, isLink = true }: Props) => {
           className="hover:underline text-xl"
           scroll={false}
           href={`/case/${work.case}`}
-        ></Link>
+        >
+          {work.project}
+        </Link>
       )
     } else {
-      return <div className="text-xl"> {work.project}</div>
+      return <div className="text-xl">{work.project}</div>
     }
   }, [work, isLink])
 
