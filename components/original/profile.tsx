@@ -18,7 +18,7 @@ const Profile = () => {
             <p className="text-muted-foreground">{profile.position}</p>
           </div>
           {urlLinks.length > 0 && (
-            <div>
+            <div className="print:hidden">
               <ExternalLinkArea urlLinks={urlLinks} />
             </div>
           )}

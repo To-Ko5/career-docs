@@ -33,7 +33,7 @@ const Work = ({ work, isLink = true }: Props) => {
 
   return (
     <section>
-      <Card>
+      <Card className="print:shadow-none">
         <CardHeader>
           <div className="text-sm text-right tabular-nums text-muted-foreground sm:hidden mb-3">
             {dateFormat(work.date.start)} - {dateFormat(work.date.end)}
