@@ -9,7 +9,7 @@ const Works = () => {
 
       <div className="space-y-8">
         {works.map((work) => {
-          return <Work key={work.case} work={work} />
+          return <Work key={work.case} work={work} isLink={false} />
         })}
       </div>
     </section>

@@ -9,9 +9,6 @@ const Header = () => {
     <header className="mt-5 mb-4">
       <div className="container max-w-4xl flex justify-between">
         <div className="flex items-center">
-          <div className="mr-4">
-            <Sidebar />
-          </div>
           <div className="flex-1">
             <div>
               <Link href="/">{site.title}</Link>
