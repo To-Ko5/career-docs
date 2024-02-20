@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button'
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTrigger
@@ -13,15 +12,9 @@ import {
 import { works } from '@/data/data'
 import { MoreHorizontalIcon } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import { ReactNode, useState } from 'react'
+import { useState } from 'react'
 
-const Page = ({
-  params,
-  children
-}: {
-  params: { id: number }
-  children: ReactNode
-}) => {
+const Page = ({ params }: { params: { id: number } }) => {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(true)
 
