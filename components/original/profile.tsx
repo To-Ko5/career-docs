@@ -7,7 +7,10 @@ const Profile = () => {
     <section>
       <div className="flex flex-col sm:flex-row gap-4">
         <div className="max-w-[100px]">
-          <img src="https://placehold.jp/500x500.png" />
+          <picture>
+            <source srcSet="https://placehold.jp/500x500.png" />
+            <img src="https://placehold.jp/500x500.png" alt="profile" />
+          </picture>
         </div>
         <div>
           <div className="mb-2">
